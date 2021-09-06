@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio player</title>
+    <!-- favIcon  -->
+    <link rel="shortcut icon" href="thumbnails/favicon.png" type="image/x-icon">
+    <!-- link css and javaScript -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <!-- Icons for controls are downloaded free from https://icons8.com/icons/set/previous  -->
+
+
+
+</head>
+
+<body>
+
+    <!--  container to make everything center  -->
+    <div class="container">
+        <!-- new chrome policy for auto play stop -->
+        <div id="autoPlay">
+
+            hi user. Your browser may stop playing sound. to avoid new auto play stop rules . this window is just to get intreaction from users first and then load music
+            <div><button id="autoPlaybtn">Okay</button></div>
+        </div>
+        <!-- aur audio player container -->
+        <div class="AudioPlayer">
+            <div id="MusicThumbnailContainer"><img src="thumbnails/favicon.png" alt="Music" id="MusicThumbnail"></div>
+            <div>
+                <!-- Progress Bar to show music played time and for seeking -->
+                <div id="ProgressBarContainer">
+                    <div id="progressBarTrack">
+
+                        <div id="progressBar"></div>
+                        <div id="progressbarThumbContainer">
+                            <div id="progressbarThumb"></div>
+                            <div class="toolpin">Not a Range Slider</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="TitleOfSong">Title</div>
+                <!-- show music thumbnail  -->
+                <!-- control buttons -->
+                <div id="controls">
+                    <button id="previousSong"><img src="controls icons/previous.png" alt="Previous"></button>
+                    <button id="playOrPause"><img src="controls icons/play.png" alt="Play/pause" id="playOrPauseIcon"></button>
+                    <button id="NextSong"><img src="controls icons/next.png" alt="Next"></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="playlist">
+        <div class="songContainer ">
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
