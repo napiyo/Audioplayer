@@ -65,7 +65,7 @@ autoplaybtn.addEventListener('click', () => {
         //Audio web API for visulization and effecs
 
         const track = audioContext.createMediaElementSource(song)
-
+        track.crossOrigin = "anonymous";
 
         track.connect(audioContext.destination);
         const gainNode = audioContext.createGain();
@@ -103,7 +103,7 @@ function seekSong(e) {
 // functions
 function LoadNewSong(index) {
     song.src = playlist[index].AudioSource
-
+        // song.crossOrigin = "anonymous";
     MusicThumbnail.src = playlist[index].ImageSource
     TitleOfSong.innerHTML = playlist[index].title;
 }
