@@ -13,7 +13,7 @@ let progressbarThumb = document.querySelector("#progressbarThumb");
 let playlistDisplay = document.querySelector(".playlist");
 //music files
 let song = new Audio
-let playlist = [{ title: "Lonely By Akon", AudioSource: "./music files/Akon-Lonely.mp3", ImageSource: "./thumbnails/Akon-lonely.jpg" },
+let playlist = [{ title: "Lonely By Akon", AudioSource: "./music files/Akon-Lonely.mp3", ImageSource: "./thumbnails/Akon-Lonely.jpg" },
     { title: "Bandeya Rey Bandeya", AudioSource: "./music files/Bandeya Rey Bandeya.mp3", ImageSource: "./thumbnails/Bandeya Rey Bandeya.jpg" }
 ]
 
